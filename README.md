@@ -6,7 +6,7 @@ Personal dotfiles managed with GNU Stow.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+   git clone https://github.com/pricelenoir/dotfiles.git ~/dotfiles
    ```
 
 2. Install GNU Stow (if not already installed)
@@ -16,10 +16,3 @@ Personal dotfiles managed with GNU Stow.
    cd ~/dotfiles
    stow */
    ```
-
-## Included Configurations
-
-- Zsh shell configuration
-- Neovim editor setup
-- Starship prompt
-- Ghostty terminal
