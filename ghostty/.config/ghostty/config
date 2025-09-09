@@ -1,0 +1,7 @@
+theme = catppuccin-mocha
+font-family = JetBrainsMono Nerd Font Mono
+
+# MacOS dock icon options:
+# official, blueprint, chalkboard, microchip, glass, holographic, paper, retro, xray
+macos-icon = glass
+keybind = shift+enter=text:\n
