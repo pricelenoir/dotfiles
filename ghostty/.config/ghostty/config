@@ -1,7 +1,8 @@
-theme = catppuccin-mocha
+theme = Dark Modern
 font-family = JetBrainsMono Nerd Font Mono
+keybind = shift+enter=text:\n
 
 # MacOS dock icon options:
 # official, blueprint, chalkboard, microchip, glass, holographic, paper, retro, xray
-macos-icon = glass
-keybind = shift+enter=text:\n
+macos-icon = custom
+macos-custom-icon = ~/.config/ghostty/icons/ghostty-white.icns
