@@ -29,7 +29,8 @@ $line_break$character"""
 palette = 'gruvbox_dark'
 
 [palettes.gruvbox_dark]
-color_fg0 = '#fbf1c7'
+color_fg0 = '#1f1f1f'
+color_fg1 = '#fbf1c7'
 color_bg1 = '#3c3836'
 color_bg3 = '#665c54'
 color_blue = '#458588'
@@ -76,7 +77,7 @@ format = '[ $user ]($style)'
 [directory]
 style = "fg:color_fg0 bg:color_yellow"
 format = "[ $path ]($style)"
-truncation_length = 3
+truncation_length = 1
 truncation_symbol = "…/"
 
 [directory.substitutions]
@@ -155,7 +156,7 @@ ignore_base = false
 disabled = false
 time_format = "%I:%M %p"
 style = "bg:color_bg1"
-format = '[[  $time ](fg:color_fg0 bg:color_bg1)]($style)'
+format = '[[  $time ](fg:color_fg1 bg:color_bg1)]($style)'
 
 [line_break]
 disabled = false
