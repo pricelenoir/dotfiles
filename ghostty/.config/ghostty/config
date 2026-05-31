@@ -1,8 +1,5 @@
-theme = Dark Modern
+theme = Brogrammer
 font-family = JetBrainsMono Nerd Font Mono
 keybind = shift+enter=text:\n
-
-# MacOS dock icon options:
-# official, blueprint, chalkboard, microchip, glass, holographic, paper, retro, xray
-macos-icon = custom
-macos-custom-icon = ~/.config/ghostty/icons/ghostty-white.icns
+background-opacity = 0.9
+background-blur-radius = 20
