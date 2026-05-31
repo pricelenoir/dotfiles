@@ -1,6 +1,9 @@
 local opt = vim.opt
 local o = vim.o
 
+-- Enable 24-bit RGB colors (required for true color themes)
+o.termguicolors = true
+
 -- Indentation
 o.expandtab = true
 o.shiftwidth = 4

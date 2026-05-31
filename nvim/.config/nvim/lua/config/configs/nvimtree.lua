@@ -1,6 +1,3 @@
--- Load base46 nvimtree highlights
-dofile(vim.g.base46_cache .. "nvimtree")
-
 require("nvim-tree").setup({
     filters = { dotfiles = false },
     disable_netrw = true,

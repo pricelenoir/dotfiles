@@ -1,7 +1,4 @@
--- Load base46 cmp highlights
-dofile(vim.g.base46_cache .. "cmp")
-
-local cmp = require "cmp"
+local cmp = require("cmp")
 
 local options = {
     completion = { completeopt = "menu,menuone" },
@@ -17,29 +14,29 @@ local options = {
             if cmp.visible() then
                 cmp.close()
             else
-                fallback()  -- Normal Esc behavior (exit insert mode)
+                fallback() -- Normal Esc behavior (exit insert mode)
             end
         end, { "i" }),
 
-        ["<CR>"] = cmp.mapping.confirm {
-        behavior = cmp.ConfirmBehavior.Insert,
-        select = true,
-        },
+        ["<CR>"] = cmp.mapping.confirm({
+            behavior = cmp.ConfirmBehavior.Insert,
+            select = true,
+        }),
 
         ["<Tab>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-            cmp.confirm({ select = true })
-        else
-            fallback()
-        end
+            if cmp.visible() then
+                cmp.confirm({ select = true })
+            else
+                fallback()
+            end
         end, { "i", "s" }),
 
         ["<S-Tab>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-            cmp.select_prev_item()
-        else
-            fallback()
-        end
+            if cmp.visible() then
+                cmp.select_prev_item()
+            else
+                fallback()
+            end
         end, { "i", "s" }),
 
         -- Arrow key navigation in completion menu
@@ -68,4 +65,4 @@ local options = {
     },
 }
 
-return vim.tbl_deep_extend("force", options, require "nvchad.cmp")
+return options

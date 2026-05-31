@@ -1,6 +1,3 @@
--- Base46 cache path
-vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46_cache/"
-
 -- Bootstrap lazy.nvim (package manager)
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -18,23 +15,11 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Add leader before loading lazy
+-- Set leader before loading lazy
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- Setup plugins
-require("lazy").setup("price.plugins")
-require("price.keymap")
-require("price.options")
-
--- Load base46 cache after lazy (required)
-if vim.fn.isdirectory(vim.g.base46_cache) == 1 then
-    for _, v in ipairs(vim.fn.readdir(vim.g.base46_cache)) do
-        dofile(vim.g.base46_cache .. v)
-    end
-else
-    -- Generate cache if it doesn't exist
-    vim.schedule(function()
-        require("base46").load_all_highlights()
-    end)
-end
+-- Load core configuration
+require("config.options")
+require("lazy").setup("config.plugins")
+require("config.keymap")
