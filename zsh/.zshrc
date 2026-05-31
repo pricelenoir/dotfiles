@@ -7,6 +7,7 @@ if [[ "$TERM_PROGRAM" == "ghostty" ]]; then
 fi
 
 # >>> conda initialize >>>
+export CONDA_AUTO_ACTIVATE_BASE=false
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
