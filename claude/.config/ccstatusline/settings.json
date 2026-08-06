@@ -1,0 +1,72 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "f0e8091b-91d7-4555-931b-d24b4d926cfb",
+        "type": "model",
+        "color": ""
+      },
+      {
+        "id": "eadd90b7-32f7-4b7b-8dde-9bf6f835239d",
+        "type": "separator"
+      },
+      {
+        "id": "0ba36df9-e363-49bb-8924-981333214843",
+        "type": "context-bar",
+        "color": ""
+      },
+      {
+        "id": "ed1162bc-4702-424c-b4d7-31f19200c7db",
+        "type": "separator"
+      },
+      {
+        "id": "69df2d34-c09e-444b-be4c-5559b78d20c7",
+        "type": "session-usage",
+        "color": ""
+      },
+      {
+        "id": "69c3d647-806a-42a7-b5ec-0b84d5326bd0",
+        "type": "separator"
+      },
+      {
+        "id": "b1da49e0-eab4-4740-bcd8-6f40a33a3d47",
+        "type": "reset-timer",
+        "color": ""
+      }
+    ],
+    [],
+    []
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "defaultPadding": " ",
+  "defaultPaddingSide": "both",
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "gitCacheTtlSeconds": 5,
+  "minimalistMode": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [
+      ""
+    ],
+    "endCaps": [
+      ""
+    ],
+    "theme": "nord-aurora",
+    "autoAlign": false,
+    "continueThemeAcrossLines": false
+  },
+  "installation": {
+    "method": "pinned",
+    "installedVersion": "2.2.27"
+  }
+}

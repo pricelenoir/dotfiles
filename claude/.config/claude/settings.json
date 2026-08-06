@@ -11,5 +11,12 @@
         ]
       }
     ]
+  },
+  "tui": "fullscreen",
+  "statusLine": {
+    "type": "command",
+    "command": "ccstatusline",
+    "padding": 0,
+    "refreshInterval": 10
   }
 }
