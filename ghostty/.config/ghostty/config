@@ -1,5 +1,19 @@
+# Theming
 theme = Brogrammer
 font-family = JetBrainsMono Nerd Font Mono
-keybind = shift+enter=text:\n
 background-opacity = 0.9
 background-blur-radius = 20
+
+# Behavior
+working-directory = home
+
+# Keybinds
+keybind = shift+enter=text:\n
+keybind = super+d=new_split:right
+keybind = super+shift+d=new_split:down
+keybind = super+t=new_tab
+keybind = super+w=close_surface
+keybind = super+alt+arrow_up=goto_split:up
+keybind = super+alt+arrow_down=goto_split:down
+keybind = super+alt+arrow_left=goto_split:left
+keybind = super+alt+arrow_right=goto_split:right
