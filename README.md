@@ -6,13 +6,13 @@ Personal dotfiles managed with GNU Stow.
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/pricelenoir/dotfiles.git ~/dotfiles
+   git clone https://github.com/pricelenoir/pdotfiles.git ~/pdotfiles
    ```
 
 2. Install GNU Stow (if not already installed)
 
 3. Apply dotfiles:
    ```bash
-   cd ~/dotfiles
+   cd ~/pdotfiles
    stow */
    ```
