@@ -112,7 +112,7 @@ return {
                 options = {
                     theme = "auto",
                     component_separators = { left = "", right = "" },
-                    section_separators = { left = "", right = "" },
+                    section_separators = { left = "", right = "" },
                     globalstatus = true,
                     disabled_filetypes = { statusline = { "alpha" } },
                 },
@@ -137,10 +137,12 @@ return {
                                 unnamed = "[No Name]",
                             },
                         },
+                        "searchcount",
+                        "selectioncount",
                     },
-                    lualine_x = {}, -- Empty
-                    lualine_y = {}, -- Empty
-                    lualine_z = {}, -- Empty
+                    lualine_x = { "lsp_status", "diagnostics", "filetype" },
+                    lualine_y = { "location" },
+                    lualine_z = { "progress" },
                 },
                 inactive_sections = {
                     lualine_a = {},
